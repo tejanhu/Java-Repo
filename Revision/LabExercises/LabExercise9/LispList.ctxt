@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=list
+comment0.target=LispList(LispList.Cell)
+comment1.params=
+comment1.target=boolean\ isEmpty()
+comment2.params=
+comment2.target=java.lang.Object\ head()
+comment3.params=
+comment3.target=LispList\ tail()
+comment4.params=item
+comment4.target=LispList\ cons(java.lang.Object)
+comment5.params=
+comment5.target=LispList\ empty()
+comment6.params=other
+comment6.target=boolean\ equals(java.lang.Object)
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment8.params=l
+comment8.target=java.lang.String\ restToString(LispList.Cell)
+numComments=9

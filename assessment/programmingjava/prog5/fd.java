@@ -1,0 +1,56 @@
+/* *****************************************
+AUTHOR Paul Curzon
+This program demonstrates 
+ - while loops.
+ 
+   Ask the user if they want to go on repeatedly until they don't
+   
+   What happens if you type something other than y or n? Predict then try.
+   
+******************************************** */
+
+import javax.swing.*; // import the swing library for I/O
+
+class fd
+{
+    public static void main (String[] param)
+    {
+        
+        whileGoOn();
+        System.exit(0);
+        
+    } // END main
+
+
+   /* ***************************************************
+       Define some commands of our own to use above
+   *************************************************** */
+    
+    
+    /* ***************************************************
+       Ask the user if they want to go on repeatedly until they don't.
+    */
+    
+    public static void whileGoOn()
+    {
+
+       // Declare variables
+       //
+       
+       String ans;  // y means continue, n means stop
+       int release1;
+        while(!ans.equalsIgnoreCase("quit"))
+       {
+           ans = JOptionPane.showInputDialog("Name a film?");
+ 
+	     String release=JOptionPane.showInputDialog(" What year was " + ans		+ " released?");
+		release1 = Integer.parseInt(release);
+
+       }
+return;
+       
+
+    } // END whilegoon
+    
+
+} // END class while1 

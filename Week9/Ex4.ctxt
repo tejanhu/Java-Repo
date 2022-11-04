@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=n\ list1
+comment0.target=void\ removeLastOccurrence(java.lang.Object,\ Ex4.Cell)
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=str
+comment2.target=Ex4.Cell\ parseIntLinkedList(java.lang.String)
+comment3.params=list
+comment3.target=java.lang.String\ linkedListToString(Ex4.Cell)
+numComments=4

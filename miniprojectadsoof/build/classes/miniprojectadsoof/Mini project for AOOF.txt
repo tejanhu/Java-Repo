@@ -1,0 +1,52 @@
+
+ECS510 Algorithms and Data Structures in an Object-Oriented Framework
+
+Mini Project 2013
+Implementing a String collection class
+
+Submission date: 13 December 2013
+
+You should submit this coursework electronically through the Coursework Submission System. This is to be taken as individual coursework. All code submitted should be your own work. You are required to submit a single file in .pdf format. This file should contain all your code, a written explanation of the design decisions you made in choosing the algorithms and data structures used, an exaplantion of how they work, and a presentation of timing figures obtained from your code. Half the marks for this mini-project are for presentation skills rather than coding skills. However, presentation includes such things as ensuring the code is laid out well in the .pdf file, and explaining the code well in good clear and correct technical English.
+
+In this mini-project you have to build a class which implements an interface called WordStore. This interface defines a collection which stores Strings. It has methods:
+
+    public void add(String word)
+    Adds a String to the collection
+    public int count(String word)
+    Returns the number of times a String is in the collection
+    public void remove(String word)
+    Removes one occurrence of a String from the collection, or leaves the collection unchanged if the String does not occur in it.
+
+The following Java files are made available to you:
+
+    WordStore.java
+    WordTest0.java
+    WordTest1.java
+    WordTest2.java
+    WordTest3.java
+    WordTest4.java
+
+Plus the compiled file
+
+    WordGen.class (the source code is in WordGen.java)
+
+There is a missing file called WordStoreImp.java. Without this file, you can compile and run the code in WordTest0.java, which uses the code in WordGen.class, but not the other files. You need to supply the missing file, with correct code to make the other programs work. You will not need make modifications to any of the other files. The Java files given pass an int argument to the WordStoreImp constructor, indicating the initial number of Strings the WordStore object will hold. You may or may not need to make use of this parameter when you write your code to implement WordStore, if you do not need to make use of it just give your constructor an int parameter but do not otherwise use it.
+
+The code in WordGen.java generates random words. The zero-argument static method make in this class returns a String with a new word. There is no guarantee that a word returned by a previous call of make will not be returned again. The static method initialise which takes an integer argument, the "seed", sets up a particular series of words which is always given for any particular seed, so you can test the code several times knowing each time the same words will be generated. There is no test that the words generated have any meaning in English, most won't, but the rules which generate them ensure they are pronounceable using standard English spelling and phonetics convention, with shorter words being generated more often than longer words, and the chance of a particular letter being used being roughly as it is in English. So some words are more likely to be generated than others. All words generated consist of lower case alphabetic characters only.
+
+The program in WordTest0.java just generates and displays some words, so you can see the sort of data you are dealing with. The program in WordTest1.java enables you to generate some words (which are not displayed, so you can generate more of them than you could reasonably display on the screen) and then enter your own words to see how many times each of them was generated. It requires that objects of type WordStore have methods add and count. Both take a String as an argument, the first adding it to the collection held in the WordStore object, the second returning an integer saying how many times the String argument is stored in the collection. So the collection class you write as WordStoreImp must have the concept of a word being stored in it a particular number of times. Objects of type WordStore must also have the method remove which takes a String as an argument and removes one occurrence of it from the collection, or leaves the collection unchanged if the String does not occur in it.
+
+The programs in WordTest2.java, WordTest3.java and WordTest4.java are designed to test the efficiency of the operations count, add and remove respectively. The code in these programs generates a collection of words, then generates a second set of words stored in an array and applies the operation on the collection with each word from the second set. It measures and displays the time taken to apply the operation repeatedly.
+
+Your submission should include the code you have written (you should not include the front-end code that was provided for you), a brief description of how it works, and some experimental figures showing its time performance with varying amounts of data. The figures should be displayed in the form of graphs or tables.
+
+Marks for this coursework will be given for both correctness and efficiency of the implementation of WordStore. To get very efficient storage, you will need to research techniques such as hash tables and ordered trees, which are not covered directly in the notes for this course. For full marks you will need to demonstrate some research into suitable data structures, and implementation of them. There will also be marks for clarity of your explanation, and presentation of your experimental results.
+
+As this coursework is meant to test your ability to build your own data structures, your code should not make use of any code provided in the Java library apart from methods provided as part of the class String. So you may use arrays, but not the class ArrayList or Map or any other class which is listed under Java's API documentation. You may not make use of any code provided by any third party supplier either (that is classes written in Java by someone else, intended to support Java programming but not an official part of Sun's Java distribution, for example my LispList class).
+Matthew Huntbach
+Last modified: 14 November 2013 
+
+
+ 
+
+

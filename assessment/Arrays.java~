@@ -1,0 +1,100 @@
+	
+/* ***************************************
+/*AUTHOR: HUSSEIN AHMED TEJAN
+		   
+   ****************************************/
+import javax.swing.JOptionPane;
+
+
+class Arrays // ***THE WORD AFTER CLASS MUST BE THE NAME OF THE FILE (BEFORE the .java) YOU SAVE THIS IN
+{
+    public static void main (String[] param)
+    {
+
+		DOTHIS();  // ***REPLACE THE WORD DOTHIS WITH THE NAME YOU USE BELOW
+		
+		System.exit(0);
+		
+    } // END main
+
+	
+	/* ***************************************
+	*
+	*	***PUT A COMMENT HERE TO EXPLAIN WHAT THIS METHOD IS FOR
+	*/
+
+
+
+
+String [] paintarray = new String [4]; 
+paintarray[0] = "Mona Lisa";	
+paintarray[1] = "Water Lilies";
+paintarray[2] = "The Scream";
+paintarray[3] = "A young rembrandt";
+
+String Painting;
+
+
+int vote1= 0;
+int vote2= 0;
+int vote3= 1;
+int vote4= 0;
+
+
+
+
+Painting = JOptionPane.showInputDialog("Which painting do you think is the best?");
+int paint=Integer.parseInt(Painting);
+
+while (paint==-33)
+{
+
+if (paint == 0) 
+{
+
+vote1= vote1+1;
+
+}
+
+
+if (paint == 1) 
+{
+
+vote2= vote2+1;
+
+}
+
+
+if (paint == 2) 
+{
+
+vote3= vote3+1;
+
+}
+
+
+if (paint == 3) 
+{
+
+vote4= vote4+1;
+
+}
+else 
+{
+
+System.out.println("ERROR!");
+
+  }
+
+
+} // END while
+
+
+
+
+
+
+
+	
+} // END class Arrays  
+               // ***DONT FORGET TO CHANGE 'template' HERE TO YOUR CLASS NAME FROM THE TOP

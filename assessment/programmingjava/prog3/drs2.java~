@@ -1,0 +1,62 @@
+/* *****************************************
+AUTHOR Paul Curzon
+
+  A program to demonstrate if statements on a string value Try
+changing the assignment of ans to something else to see the
+difference.  Notice that you do not use == to compare strings, but
+rather use the more cumbersome equals. Using == for strings is a
+common mistake so watch out for it...
+   
+******************************************** */
+
+import javax.swing.*;
+
+class drs2
+{
+    public static void main (String[] param)
+    { 
+        drs2();
+        System.exit(0);
+        
+    } // END main
+
+/* *********************************
+    A method that asks to insult you 
+*/
+    public static void drs2()
+    {
+
+        JOptionPane.showMessageDialog( "I can tell you the style of the music of different digital radio stations.");
+
+    
+
+       // Declare variables
+       //
+        String radiostation;   
+        String ans;    
+        
+      {
+        radiostation = JOptionPane.showInputDialog("Give me a name of a digital radio station? ");
+        ans = radiostation;
+       
+       if (ans.equalsIgnoreCase("Magic"))
+        {
+           JOptionPane.showMessageDialog(null, "Easy Listening");        
+        }
+  
+        else if (ans=="BBC Radio 1")
+        {
+            JOptionPane.showMessageDialog(null, "Pop Music");
+        }   
+        else if (ans=="bbc radio 1")
+        {
+            JOptionPane.showMessageDialog(null, "Pop Music");
+        }   
+        else
+        {
+            JOptionPane.showMessageDialog(null, "-----");
+        }   
+        
+        JOptionPane.showMessageDialog(null, "Thanks for your answer");                 
+       
+    } }}// END yesNo

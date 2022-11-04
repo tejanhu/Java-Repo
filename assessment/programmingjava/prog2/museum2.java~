@@ -1,0 +1,51 @@
+/* *****************************************
+AUTHOR Paul Curzon
+This program demonstrates 
+ - integer variables
+ - doing calculations.
+ 
+   Ask the user for a number, and perform a simple calculation on it:
+   square it and divide by 3. Finally print out the result
+******************************************** */
+
+import javax.swing.*; // import the swing library for I/O
+
+class museum2
+{
+    public static void main (String[] param)
+    {
+        
+        squarethird();
+        System.exit(0);
+        
+    } // END main
+
+
+   /* ***************************************************
+       Define some commands of our own to use above
+   *************************************************** */
+    
+    
+    /* ***************************************************
+       This method asks the user for a number, and performs a simple calculation on it:
+       square it and divide by 3. Finally print out the result
+    */
+    
+    public static void squarethird()
+    {
+
+       // Declare variables
+       //
+	String textInput;
+textInput = JOptionPane.showMessageDialog(null, "Hi, welcome to the Natural History Museum.");
+       int Number;
+       Number = Integer.parseInt(textInput);
+
+
+        
+    } // END squarethird
+    
+
+} // END class calculate
+
+

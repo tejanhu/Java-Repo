@@ -1,0 +1,69 @@
+	
+/* ***************************************
+   AUTHOR: Paul Curzon ***PUT YOUR NAME HERE
+		   ***WRITE A SHORT DESCRIPTION OF WHAT YOUR MODIFIED PROGRAM DOES HERE.
+	   
+	   This is not a just an outline of a program set up so you can fill in the gaps.
+	   Stuff in CAPITALS WITH STARS indicates what you need to change to create a program that works
+	   The rest is common to all programs you write.
+   ****************************************/
+
+class whiles // ***THE WORD AFTER CLASS MUST BE THE NAME OF THE FILE (BEFORE the .java) YOU SAVE THIS IN
+{
+    public static void main (String[] param)
+    {
+
+		while_loop();  // ***REPLACE THE WORD DOTHIS WITH THE NAME YOU USE BELOW
+		roll_dice ();
+
+
+		System.exit(0);
+		
+    } // END main
+
+	
+	/* ***************************************
+	*
+	*	***PUT A COMMENT HERE TO EXPLAIN WHAT THIS METHOD IS FOR
+	*/
+	
+    public static void while_loop ()  // ***REPLACE THE NAME 'DOTHIS' WITH THE NAME YOU USED ABOVE
+	                              // ***THE NAME SHOULD HELP THE READER UNDERSTAND WHAT THIS CODE DOES
+    {
+// int score=0;
+//int dice;
+//int roll_dice;
+
+  //   while (dice!=6) {
+
+//dice=roll_dice();
+//if (dice!=6)
+//score = score+dice;
+}
+
+
+public static int roll_dice ()
+  {
+   int dice=roll.dice();
+
+   while((dice!equals 6)) 
+{
+
+score=score+dice;
+System.out.println("Got there");
+dice=roll_dice();
+System.out.println(score);
+
+} //END roll_dice method
+
+
+
+
+ 
+    } // END DOTHIS            
+	         // ****DONT FORGET TO CHANGE 'DOTHIS' HERE TO YOUR METHOD NAME
+	
+	
+	
+} // END class template  
+               // ***DONT FORGET TO CHANGE 'template' HERE TO YOUR CLASS NAME FROM THE TOP

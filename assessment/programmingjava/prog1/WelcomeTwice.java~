@@ -1,0 +1,31 @@
+class WelcomeTwice
+{
+    public static void main (String[] param)
+    {
+        // We want to print out the long message twice (without writing it out twice)
+		
+        longHelloMessage();
+        longHelloMessage();
+        System.exit(0);
+		
+    } // END main
+
+
+/* ***************************************************
+	   Define some commands of our own to use above
+   *************************************************** */
+	
+	/*  *************************
+	    Print a long welcome message
+	*/
+	
+    public static void longHelloMessage ()
+    {
+ 
+        System.out.println("Hello World on this most wonderful day, it's a joy to be alive!");
+		
+    } // END longHelloMessage
+	
+	
+	
+} // END class hellotwice

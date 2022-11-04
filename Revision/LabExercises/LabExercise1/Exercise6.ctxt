@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=dm1\ dm2
+comment0.target=DrinksMachine\ getReference(DrinksMachine,\ DrinksMachine)
+comment1.params=main
+comment1.target=void\ main(java.lang.String[])
+numComments=2

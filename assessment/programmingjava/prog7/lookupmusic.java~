@@ -1,0 +1,31 @@
+
+import javax.swing.*;
+
+
+class lookupmusic
+{
+	public static void main (String[] param)
+	{		
+		lookup();
+		System.exit(0);
+	}	
+
+	public static void lookup()
+	{		
+	
+	final int tracks=5;
+	String[] lookup = new int [5];
+	String querymusic;
+
+	for (int i=0; i<=lookup.length; i++)
+	{	
+	lookup[i]= JOptionPane.showInputDialog("Which top "+ 				tracks + " tracks do you like?");
+		
+	}
+	querymusic= JOptionPane.showInputDialog("Name a track and 			I will tell you where you placed it.");
+
+	JOptionPane.showMessageDialog(null,"You placed " + 				querymusic + " in position " + i );
+
+	}
+
+}

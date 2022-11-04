@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=number\ num\ numeral
+comment0.target=void\ Destructive(int[],\ int,\ int)
+comment1.params=number\ num\ numeral
+comment1.target=int[]\ Constructive(int[],\ int,\ int)
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3

@@ -1,0 +1,93 @@
+//Author: Iqbal Hussain
+
+//The program is called 'Chatbot' which is a simulated bot which can talk and reply to humans. 
+import javax.swing.*; // import the swing library for I/O
+
+class chatbotm
+{
+    	public static void main (String[] param)
+    	{
+  	    	users();
+             	System.exit(0);
+    	
+
+	} // END main
+	
+	public static int users()
+	{
+		int user_no=Integer.parseInt(JOptionPane.showInputDialog("How 			many users will there be?"));
+		
+		for(int i=0; i<=user_no; i++)	
+		{	
+			hello(i);
+			askForFact(i);
+		}
+		
+			
+
+	}	
+		
+    	public static void hello(int i)
+	{ 
+	
+		JOptionPane.showMessageDialog(null, "Hello Human " + i +", I am 		a chatbot." );
+	
+
+	}// Basic dialogue message
+
+        public static void askForFact(int i)
+	{
+
+       		String userfacti = JOptionPane.showInputDialog("Hi, what's 			your name?");
+		String userfact2;
+       		JOptionPane.showInputDialog(null, "Hi there " +  userfacti + ". 			How are you?"); 
+       
+      		String userfact1 = JOptionPane.showInputDialog("I'm glad to 			hear it " + userfacti + ". Do you like Football? ");
+		//Here are the first set of decision's, which give out a 			response depending on what the user previously inputs.
+
+     		if(userfact1.equalsIgnoreCase("Yes"))
+        	{
+           
+    	 	userfact2 = JOptionPane.showInputDialog(null, "I like 			football "+ "too " + userfacti + ". Who do you support?");       
+        	}
+  
+        	else 
+        	{
+	 	userfact2 = JOptionPane.showInputDialog(null, "How can 			you not like football. It's amazing" + userfacti + ". You must 			have a team that you support?"); 
+		}
+		team(userfacti, userfact2);
+		 
+	}
+
+
+	public static void team(String userfact, String userfact2)
+	{
+	if	(userfact2.equalsIgnoreCase("arsenal") && 				userfact2.equalsIgnoreCase("Manchester United") && 				userfact2.equalsIgnoreCase("Chelsea") && 				userfact2.equalsIgnoreCase("Manchester City")); 																																													
+
+		{	
+			JOptionPane.showInputDialog(null, userfact+ ","+ 				userfact2 +" they are a pretty good team to be honest");
+		}
+
+		looplove(userfact,userfact2);
+	
+	}
+	public static void looplove(String userfact, String userfact2)
+	{
+	String rating;  // whatever the person types as text
+       	int no_rating = 0;  // an integer version of textinput
+       
+		rating = JOptionPane.showInputDialog( "How much do you rate 			your team from 1-10?");
+		no_rating = Integer.parseInt(rating);//Parse string into int 			storage
+      		for (int i=1; i<=no_rating; i++)//loop in repsonse to rating 			given
+       		{
+          	JOptionPane.showMessageDialog(null, i+": You love" + userfact2 			+ "!");
+       		}
+
+      	JOptionPane.showInputDialog("Really? Why is that then?");
+	JOptionPane.showMessageDialog(null, "I'm glad to hear that but I have 		to go now.  I've enjoyed talking with you " + userfact + ".");
+
+  	}
+}// END class chatbot
+	
+
+       

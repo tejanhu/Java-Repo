@@ -1,0 +1,68 @@
+// Author: Iqbal Hussain Date:28/11/2011
+//This program demonstrates an array which is able to multiple variables in identical compartments, here we use ask a user for their top 5 music tracks which are than stored in these compartments for later use.
+
+import javax.swing.*;
+
+class musictrack
+{
+	public static void main (String []param)//Runs main method and runs all other methods
+	{
+		final int tracks= 5;// Stores value which doesn't change
+		final int songposition= 0 ;// Stores value which doesn't change
+ 		tracksname(tracks);//Intialises value into another method
+		System.exit(0);
+	
+
+	}
+	
+	public static void tracksname (int tracks)//Method which uses arrays to store the music tracks in order into an array, which can then be looked up by the user
+
+	{
+
+		int[]songposition=new int[tracks];//Array intialised with track variable length in integer values
+		JOptionPane.showMessageDialog(null, "Which top "+ tracks + " tracks do you like?");
+
+		String[] song = new String[tracks];// Array intialised in letter values for storage
+
+		for (int i=0; i<songposition.length; i++)//Loop storing multiple tracks
+		{	
+			
+			song [i] = JOptionPane.showInputDialog(i+1 + ":");//stores tracks one by one
+	
+		}
+		
+		String lookuptrack= JOptionPane.showInputDialog("Name an act and I will tell you where you placed it?");//Strings and stores track user is looking for, for use in if statement later
+		
+		for (int j=0; j<songposition.length; j++)//Loop looks through stored values to get position of track asked for
+		{
+			if (lookuptrack.equalsIgnoreCase(song [j]))// IF statement looks to see if asked track is found
+			{ 	
+			
+				JOptionPane.showMessageDialog(null,"You placed "+lookuptrack+" in position "+ (j+1));  						
+				//Gives message telling the user the track looked up and it's position
+			
+				return;
+			}
+		}
+		
+			JOptionPane.showMessageDialog(null," Error, input a valid track"); // Gives message indicating that the track isn't found in storage
+
+	}//End tracksname
+
+
+	
+}//End musictrack
+
+
+            
+
+
+
+
+
+
+
+
+
+
+

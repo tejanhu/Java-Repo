@@ -1,0 +1,77 @@
+//Author:Iqbal Hussain Date:06/12/2011
+//This program demonstrates the use of methods within arrays, which has done by creating a program which logs the type and number of birds seen a user in the garden which is then stored and results printed once quited.
+
+import javax.swing.*;
+
+class bd
+{
+	static final int birds=5;//Static final variable given which can be used throughout program
+	
+	public static void main (String[]param )
+	{	
+		birdreporting();
+		System.exit(0);
+	}
+	
+	public static void birdreporting()
+	{
+		String[] birdreported = {"Blue Tits","Blackbirds","Robins","Wrens","Greenfinchs"};//String array that stores name of birds corresponding to a number
+		boolean ans= true;//While true the while loop runs until it is false
+		int[] birdvalue = new int[birds];//Int array that stores the number of birds
+		
+		String birdname;//String input value 
+		int bird_name;//Parse into int storage
+		String birdcount;// String number of birds found
+		int bird_finalcount;//Parse into int storage
+
+	while (ans == true)//While loop whre if input value of bird_name doesn't equal -1, then loop works
+		
+	{
+		birdname=JOptionPane.showInputDialog("What bird are you reporting? (0-Blue tit 1-Blackbird 2-Robin 3-Wren 4-Greenfinch)Please enter 0,1,2,3,4 or -1 to QUIT:");
+		bird_name= Integer.parseInt(birdname);//Parse string to store int variable
+
+		if (bird_name == -1)//If input does equal -1 then system enters if statement
+		{
+			
+			birdresults(bird_name, birdreported ,birdvalue);//Runs birdresults method and print results
+			ans=false;// Changes ans into false therefore original condition is not met and stops while loop
+			break;//exits out of loop
+		}
+		else
+		{
+			birdcount=JOptionPane.showInputDialog("How many "+ birdreported[bird_name]+ " are now in your garden?");
+			bird_finalcount= Integer.parseInt(birdcount);//Parse string to store int variable
+			storewatched(birdreported, birdvalue, bird_name,bird_finalcount);//variables placed into method and called
+
+		}
+
+	}
+	}
+
+	public static int[] storewatched(String[] birdreported, int[]birdvalue, int bird_name, int bird_finalcount)
+	 	{
+		if( bird_finalcount >= birdvalue[bird_name])//If original value of number of birds seen is smaller than new value seen then it replaced with new value.
+		
+		{
+			birdvalue[bird_name]= bird_finalcount;
+			
+		}
+
+		return birdvalue;
+		
+	}
+		
+	public static void birdresults (int bird_name, String[] birdreported, int[] birdvalue)
+	
+	{
+		for (int i= 0; i<birdreported.length; i++)//Loop, which runs the print results for each bird and it's results
+	{ 
+		System.out.println("Your Garden Watch results are: \t"+
+		i +")" + birdreported[i]+ "\t" + birdvalue[i]);
+	} 
+	}
+
+		
+					
+}//End birdwatcher
+

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=n\ list1
+comment0.target=boolean\ boolCheck(java.lang.Object,\ Ex1.Cell)
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=str
+comment2.target=Ex1.Cell\ parseIntLinkedList(java.lang.String)
+comment3.params=list
+comment3.target=java.lang.String\ linkedListToString(Ex1.Cell)
+comment4.params=n\ m\ list
+comment4.target=void\ destChange(java.lang.Object,\ java.lang.Object,\ Ex1.Cell)
+comment5.params=n\ m\ list
+comment5.target=Ex1.Cell\ constChange(java.lang.Object,\ java.lang.Object,\ Ex1.Cell)
+numComments=6

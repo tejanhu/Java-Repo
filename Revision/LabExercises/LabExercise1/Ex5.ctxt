@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=dm\ can1\ can2
+comment0.target=void\ checkWhichCantoDrink(DrinksMachine,\ Can,\ Can)
+comment1.params=main
+comment1.target=void\ main(java.lang.String[])
+numComments=2

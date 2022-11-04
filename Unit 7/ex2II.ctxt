@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=
+comment1.target=java.lang.String\ variable()
+comment2.params=var
+comment2.target=java.lang.String\ BIG(java.lang.String)
+comment3.params=var
+comment3.target=void\ printName(java.lang.String)
+numComments=4

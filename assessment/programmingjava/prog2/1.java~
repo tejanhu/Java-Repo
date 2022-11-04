@@ -1,0 +1,90 @@
+/* *****************************************
+AUTHOR Iqbal Hussa
+This program demonstrates 
+ - integer variables
+ - doing calculations
+
+This program has been created specifically for customers being able to input interger values for the number tickets they require to enter a Museum which then calculates the total cost.
+ 
+   
+******************************************** */
+
+import javax.swing.*; // import the swing library for I/O
+
+class museum
+{
+    public static void main (String[] param)
+    {
+        
+        squarethird();
+        System.exit(0);
+        
+    } // END main
+
+
+   /* ***************************************************
+       Define some commands of our own to use above
+   *************************************************** */
+    
+    
+    /* ***************************************************
+       This method asks the user for a number, and performs a simple calculation on it:
+       square it and divide by 3. Finally print out the result
+    */
+    
+    public static void squarethird()
+    {
+
+       // Declare variables
+       //
+       String textinput;  // whatever the person types
+       int number;        // an integer version of textinput
+       int answer;        // the final answer 
+       
+       // Get some text (a string) from the user then
+       // convert (known as parsing) it into a number version
+       //
+
+JOptionPane.showMessageDialog(null, "Hi, welcome to the Natural History Museum.");
+
+       textinput = JOptionPane.showInputDialog("Number of adults entering?");
+       number = Integer.parseInt(textinput);
+
+       // Now do the calculation
+       //
+       answer = number * 2;
+
+String textinput1;  // whatever the person types
+       int number1;        // an integer version of textinput
+       int answer1;  
+
+       textinput1 = JOptionPane.showInputDialog("Number of children entering?");
+       number1 = Integer.parseInt(textinput);
+ 
+        answer1 = number1 * 0;
+
+String textinput2;  // whatever the person types
+       int number2;        // an integer version of textinput
+       int answer2;  
+
+
+textinput2 = JOptionPane.showInputDialog("Would you like to enter the Special Exhibit? ( 1-Yes 0-No )");
+        number2 = Integer.parseInt(textinput);
+ 
+        answer2 = number2 * (number * 5 + number1 * 3 );
+
+
+
+
+
+
+       // Finally give the user the answer
+       //   
+       JOptionPane.showMessageDialog(null, "Total cost will be £" + answer2 + "" ) ;
+        
+    } // END squarethird
+    
+
+} // END class calculate
+
+

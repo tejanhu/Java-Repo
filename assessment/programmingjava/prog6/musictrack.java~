@@ -1,0 +1,14 @@
+// Author: Iqbal Hussain Date:28/11/2011
+
+
+
+import javax.swing.*;
+
+class musictrack
+	{
+	public static void main (String []param)
+	{
+	JOptionPane.inputMessageDialog(Which tracks do you like?);
+
+	}
+}

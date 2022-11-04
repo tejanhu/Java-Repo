@@ -1,0 +1,19 @@
+
+
+public class Arrays
+{
+
+
+public static void arrays (String array []param)
+{
+
+int sum =0;
+for (int i=1;i<=5;i++)
+{
+sum = sum +i;
+System.out.println("the sum: " + sum);
+} // END for
+
+} // END arrays
+
+} // END Arrays

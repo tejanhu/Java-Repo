@@ -1,0 +1,66 @@
+	
+/* ***************************************
+   AUTHOR: HUSSEIN A TEJAN 
+		   ***WRITE A SHORT DESCRIPTION OF WHAT YOUR MODIFIED PROGRAM DOES HERE.
+	   
+	   This is not a just an outline of a program set up so you can fill in the gaps.
+	   Stuff in CAPITALS WITH STARS indicates what you need to change to create a program that works
+	   The rest is common to all programs you write.
+   ****************************************/
+
+
+
+class unordered_arrays // ***THE WORD AFTER CLASS MUST BE THE NAME OF THE FILE (BEFORE the .java) YOU SAVE THIS IN
+{
+    public static void main (String[] param)
+    {
+
+		whileloop_forloop ();  // ***REPLACE THE WORD DOTHIS WITH THE NAME YOU USE BELOW
+		
+		System.exit(0);
+		
+    } // END main
+
+	
+	/* ***************************************
+	*
+	*	***PUT A COMMENT HERE TO EXPLAIN WHAT THIS METHOD IS FOR
+	*/
+	
+    public static void whileloop_forloop ()  // ***REPLACE THE NAME 'DOTHIS' WITH THE NAME YOU USED ABOVE
+	                              // ***THE NAME SHOULD HELP THE READER UNDERSTAND WHAT THIS CODE DOES
+    {
+ boolean found= false;
+int i=0; int result =0;
+int []a =new int [200]; int target=150;
+for (int j=1;j<a.length;j++)
+
+
+{
+a[j]=75*j;
+System.out.println("array a  :"+j+"  : "+a[j]);
+}
+
+while (!found & i<a.length)
+{
+System.out.println(i);
+  if (a[i]==target)
+{
+   found=true;
+System.out.println("woohoo   " + i+" "+a[i]);
+   i=i+1;
+}
+i++;
+} //END while
+result =i;
+
+    } //END whileloop_forloop
+
+
+
+ 
+    } // END unordered_arrays           
+	         // ****DONT FORGET TO CHANGE 'DOTHIS' HERE TO YOUR METHOD NAME
+	
+	
+

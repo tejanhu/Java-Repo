@@ -1,0 +1,33 @@
+/* *****************************************
+AUTHOR Iqbal Hussain
+Date: 18/10/2011
+
+This program demonstrates 
+
+******************************************** */
+
+import javax.swing.*; // import the swing library for I/O
+
+class fl
+{
+    public static void main (String[] param);
+{
+	fl();
+	System.exit(0);
+
+	}// END main
+
+	public static void lp() 
+{   
+	String 
+	Celebrity=JOptionPane.showInputDialog("What is the Name of the Celebrity? 			");
+
+	JOptionPane.showMessageDialog(null, "Judges for technical scores");
+
+	}
+
+
+
+	}//END lp
+
+

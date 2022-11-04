@@ -1,0 +1,40 @@
+//
+// Program Name: chatterbot1
+// Description: this is a very basic example of a chatterbot program
+//
+// Author: Gonzales Cenelia
+//
+import java.io.*;
+import java.util.*;
+
+public class Chatterbot1 {
+	
+	static String[] Response = {
+			"I HEARD YOU!",
+			"SO, YOU ARE TALKING TO ME.",
+			"CONTINUE, I’M LISTENING.",
+			"VERY INTERESTING CONVERSATION.",
+			"TELL ME MORE..."
+	};
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		while(true) {
+			System.out.print(">");
+			BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+			String sInput = in.readLine();
+			Random generator = new Random();
+			int nSelection = generator.nextInt(Response.length);
+			String sResponse = Response[nSelection];
+			if(sInput.equalsIgnoreCase("BYE")) {
+				System.out.println("IT WAS NICE TALKING TO YOU USER, SEE YOU NEXT TIME!");
+				break;
+			} else {
+				System.out.println(sResponse);
+			}
+		}
+	}
+}

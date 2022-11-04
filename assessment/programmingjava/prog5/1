@@ -1,0 +1,14 @@
+import javax.swing*;
+
+class 1
+{
+	public static void main (String[] param)
+{ 
+		answer();
+		system.exit(0);
+
+	}// End main
+
+	public static void answer
+
+{
